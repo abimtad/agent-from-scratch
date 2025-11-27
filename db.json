@@ -1,3 +1,28 @@
 {
-  "messages": []
+  "messages": [
+    {
+      "role": "user",
+      "content": "hi, am abel. how are u !\n",
+      "id": "6eba5461-374d-453a-9eaa-14dfe20114fb",
+      "createdAt": "2025-11-27T07:29:22.295Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Hi Abel! I'm doing well, thank you. How about you?",
+      "id": "59c65015-dadd-4b13-9495-8cb359ebcb34",
+      "createdAt": "2025-11-27T07:29:26.531Z"
+    },
+    {
+      "role": "user",
+      "content": "hi, what was my name ?",
+      "id": "3a88c993-bbe3-432e-ab2e-63ddc5b9c467",
+      "createdAt": "2025-11-27T07:29:57.897Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Your name is Abel. How can I assist you today?",
+      "id": "057edee0-6a45-4adf-a926-cfd62c9f0f69",
+      "createdAt": "2025-11-27T07:30:00.354Z"
+    }
+  ]
 }

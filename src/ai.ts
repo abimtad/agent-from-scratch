@@ -1,3 +1,8 @@
 import OpenAI from 'openai'
 
-export const openai = new OpenAI()
+const endpoint = 'https://models.github.ai/inference'
+
+export const openai = new OpenAI({
+  baseURL: endpoint,
+  apiKey: process.env['OPENAI_API_KEY'],
+})
