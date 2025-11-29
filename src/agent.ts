@@ -20,8 +20,9 @@ export const runAgent = async ({
     },
   ])
 
+  const loader = showLoader('Thinking...')
+
   while (true) {
-    const loader = showLoader('Thinking...')
     const history = await getMessages()
     const response = await runLLM({
       messages: history,
