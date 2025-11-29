@@ -2,27 +2,42 @@
   "messages": [
     {
       "role": "user",
-      "content": "hi, am abel. how are u !\n",
-      "id": "6eba5461-374d-453a-9eaa-14dfe20114fb",
-      "createdAt": "2025-11-27T07:29:22.295Z"
+      "content": "hi, am abel. what is the weather in my current place ",
+      "id": "41665ad4-18fa-406c-843e-b7f961cca8dc",
+      "createdAt": "2025-11-29T13:11:00.256Z"
     },
     {
+      "annotations": [],
+      "content": null,
+      "refusal": null,
       "role": "assistant",
-      "content": "Hi Abel! I'm doing well, thank you. How about you?",
-      "id": "59c65015-dadd-4b13-9495-8cb359ebcb34",
-      "createdAt": "2025-11-27T07:29:26.531Z"
+      "tool_calls": [
+        {
+          "function": {
+            "arguments": "{}",
+            "name": "get_weather"
+          },
+          "id": "call_6Mz9kcmQKVz8TylSSeGcuybN",
+          "type": "function"
+        }
+      ],
+      "id": "6993f7ea-6691-402c-be70-e72ae3a34359",
+      "createdAt": "2025-11-29T13:11:02.106Z"
     },
     {
-      "role": "user",
-      "content": "hi, what was my name ?",
-      "id": "3a88c993-bbe3-432e-ab2e-63ddc5b9c467",
-      "createdAt": "2025-11-27T07:29:57.897Z"
+      "role": "tool",
+      "content": "very cold. 17deg",
+      "tool_call_id": "call_6Mz9kcmQKVz8TylSSeGcuybN",
+      "id": "652a7b63-c372-4c25-b383-0031ac2fdddd",
+      "createdAt": "2025-11-29T13:11:02.115Z"
     },
     {
+      "annotations": [],
+      "content": "Hi Abel! The weather in your current location is very cold, with a temperature of 17 degrees. Make sure to dress warmly!",
+      "refusal": null,
       "role": "assistant",
-      "content": "Your name is Abel. How can I assist you today?",
-      "id": "057edee0-6a45-4adf-a926-cfd62c9f0f69",
-      "createdAt": "2025-11-27T07:30:00.354Z"
+      "id": "5d586c73-3b16-4436-9474-464d1c3dcd34",
+      "createdAt": "2025-11-29T13:11:03.974Z"
     }
   ]
 }
