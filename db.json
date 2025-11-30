@@ -116,6 +116,20 @@
       "role": "assistant",
       "id": "89789443-bfaa-4244-83b4-e2b1487c22b5",
       "createdAt": "2025-11-29T19:09:14.813Z"
+    },
+    {
+      "role": "user",
+      "content": "give me the latest post from reddit",
+      "id": "2abed084-8cf9-495b-bb6a-9f478d9ad15e",
+      "createdAt": "2025-11-30T08:27:01.231Z"
+    },
+    {
+      "annotations": [],
+      "content": "Here’s another recent post from Reddit:\n\n**Title:** [Still a cat person.](https://www.reddit.com/gallery/1p9mywr)  \n**Subreddit:** r/aww  \n**Author:** OldSet0  \n**Upvotes:** 6150  \n\nIf you want to see more or a different topic, feel free to ask!",
+      "refusal": null,
+      "role": "assistant",
+      "id": "dbd63a23-3a80-425a-b316-d7c2401ed435",
+      "createdAt": "2025-11-30T08:27:04.015Z"
     }
   ]
 }

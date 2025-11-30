@@ -42,7 +42,7 @@ export const runAgent = async ({
       const toolCall = response.tool_calls[0]
       loader.update(`executing: ${toolCall.function.name}`)
 
-      const toolResponse = await runTool(toolCall)
+      const toolResponse = await runTool(toolCall, userMessage)
       await saveToolResponse(toolCall.id, toolResponse)
 
       loader.update(`executed: ${toolCall.function.name}`)
