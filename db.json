@@ -130,6 +130,224 @@
       "role": "assistant",
       "id": "dbd63a23-3a80-425a-b316-d7c2401ed435",
       "createdAt": "2025-11-30T08:27:04.015Z"
+    },
+    {
+      "role": "user",
+      "content": "give me some new joke",
+      "id": "cf8d2af5-92cc-46d5-b3b7-9ea58724cb80",
+      "createdAt": "2025-12-14T13:45:15.904Z"
+    },
+    {
+      "role": "user",
+      "content": "give me some new joke",
+      "id": "1ca790fe-362a-4952-a424-f55ad789d8e3",
+      "createdAt": "2025-12-14T13:54:45.034Z"
+    },
+    {
+      "role": "user",
+      "content": "give me some new joke",
+      "id": "53613e69-ee0a-4dd8-9cc3-c742d53fed31",
+      "createdAt": "2025-12-14T14:04:26.482Z"
+    },
+    {
+      "role": "assistant",
+      "content": "",
+      "refusal": null,
+      "reasoning": null,
+      "tool_calls": [
+        {
+          "index": 0,
+          "id": "call_WdH6OnCTSmPsS2r9TroNoUg3",
+          "type": "function",
+          "function": {
+            "name": "dad_joke",
+            "arguments": "{}"
+          }
+        }
+      ],
+      "id": "7fe27d0c-8263-40f0-a826-c0422a94c8c8",
+      "createdAt": "2025-12-14T14:04:29.027Z"
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "text",
+          "text": "Why do pirates not know the alphabet? They always get stuck at \"C\"."
+        }
+      ],
+      "tool_call_id": "call_WdH6OnCTSmPsS2r9TroNoUg3",
+      "id": "c9aa41e9-a5eb-4435-b106-f1fe29103eb7",
+      "createdAt": "2025-12-14T14:04:29.654Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Here's a new joke for you:\n\nWhy do pirates not know the alphabet? \n\nThey always get stuck at \"C\"! 🏴‍☠️😂",
+      "refusal": null,
+      "reasoning": null,
+      "id": "d67886d0-2f9e-4b33-8227-e9ff2704471d",
+      "createdAt": "2025-12-14T14:04:30.976Z"
+    },
+    {
+      "role": "user",
+      "content": "give me a reddit post",
+      "id": "271579b1-fbab-4206-8e87-2490ea195b84",
+      "createdAt": "2025-12-14T14:04:51.170Z"
+    },
+    {
+      "role": "assistant",
+      "content": "",
+      "refusal": null,
+      "reasoning": null,
+      "tool_calls": [
+        {
+          "index": 0,
+          "id": "call_wkfUrjrkttDOyTQwFZqjDw81",
+          "type": "function",
+          "function": {
+            "name": "sub_reddit_post",
+            "arguments": "{}"
+          }
+        }
+      ],
+      "id": "8b4b261d-1de3-4f8b-85cf-e983e7c7d57e",
+      "createdAt": "2025-12-14T14:04:53.248Z"
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "text",
+          "text": "[\n  {\n    \"title\": \"/r/aww is going OC-only\",\n    \"link\": \"https://www.reddit.com/r/aww/comments/171dxph/raww_is_going_oconly/\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"AutoModerator\",\n    \"upVotes\": 2472\n  },\n  {\n    \"title\": \"Kids’ early Christmas present after years of asking. Meet Lavender 😍\",\n    \"link\": \"https://www.reddit.com/gallery/1pm2wmt\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"BlueCrayolaTeal\",\n    \"upVotes\": 12484\n  },\n  {\n    \"title\": \"New kitty we adopted is super photogenic\",\n    \"link\": \"https://i.redd.it/brbvx2udb47g1.jpeg\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"Everdale\",\n    \"upVotes\": 3591\n  },\n  {\n    \"title\": \"Lazy Saturdays. Nothing like a cat pillow 🥰\",\n    \"link\": \"https://www.reddit.com/gallery/1plv47c\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"Ralph_the_Cat\",\n    \"upVotes\": 7318\n  },\n  {\n    \"title\": \"These photos cost me my personal space.\",\n    \"link\": \"https://www.reddit.com/gallery/1pm8net\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"Sir_Adammm\",\n    \"upVotes\": 609\n  },\n  {\n    \"title\": \"My sweet girl before and after I adopted her. I have her for 4 years now and she is my little light.\",\n    \"link\": \"https://i.redd.it/j54ybls2367g1.png\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"No-Afternoon-1243\",\n    \"upVotes\": 261\n  },\n  {\n    \"title\": \"Buckets says hi\",\n    \"link\": \"https://i.redd.it/quqqnnem627g1.jpeg\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"Nuggets_Bt_Newer\",\n    \"upVotes\": 2073\n  },\n  {\n    \"title\": \"My boy is a bit photogenic:\",\n    \"link\": \"https://www.reddit.com/gallery/1pmbzjf\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"Neonvarel\",\n    \"upVotes\": 218\n  },\n  {\n    \"title\": \"Ellie was very proud of herself after catching a mouse in the house!\",\n    \"link\": \"https://i.redd.it/exixqieh4z6g1.jpeg\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"ProudnotLoud\",\n    \"upVotes\": 18393\n  },\n  {\n    \"title\": \"Miso loves gaming time with my partner 🥰\",\n    \"link\": \"https://www.reddit.com/gallery/1pmalo1\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"Koffievos\",\n    \"upVotes\": 260\n  },\n  {\n    \"title\": \"Dogs are the cheat code to happiness\",\n    \"link\": \"https://v.redd.it/84gvr15mu47g1\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"cturn3r\",\n    \"upVotes\": 313\n  },\n  {\n    \"title\": \"Caught My Cat Being Too Cute Again 😹\",\n    \"link\": \"https://i.redd.it/lkllrvknp17g1.png\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"EFM-Network\",\n    \"upVotes\": 1518\n  },\n  {\n    \"title\": \"My mom’s cat with a permanently grumpy face\",\n    \"link\": \"https://i.redd.it/034b8pwda17g1.jpeg\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"12_oz_senkin\",\n    \"upVotes\": 1782\n  },\n  {\n    \"title\": \"Sometimes the cats of my parents join me and my dog on our walk 🤭\",\n    \"link\": \"https://v.redd.it/1jn57rlaqx6g1\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"CropFairy\",\n    \"upVotes\": 29183\n  },\n  {\n    \"title\": \"Fluffy butt. Cute expression. Tiny body. Beautiful wings. This might be the cutest hummingbird photo I’ve taken.\",\n    \"link\": \"https://i.redd.it/oiaqkwa4h37g1.jpeg\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"9VoltGorilla\",\n    \"upVotes\": 349\n  },\n  {\n    \"title\": \"16 degrees out btw, he loves the snow for a 5 pound dog!\",\n    \"link\": \"https://www.reddit.com/gallery/1pm0txg\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"mikrenArt\",\n    \"upVotes\": 600\n  },\n  {\n    \"title\": \"my baby milo and mcdo\",\n    \"link\": \"https://i.redd.it/mji79n6oy57g1.png\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"Jaded-Bobcat7407\",\n    \"upVotes\": 70\n  },\n  {\n    \"title\": \"A tiny pug baby, only hours old 💕\",\n    \"link\": \"https://i.redd.it/mbghixv2d17g1.jpeg\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"Carob_971\",\n    \"upVotes\": 1125\n  },\n  {\n    \"title\": \"He gives me this sweet smile every time he wants attention.\",\n    \"link\": \"https://i.redd.it/sueqdjvqc27g1.jpeg\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"Emotional-Demand-180\",\n    \"upVotes\": 524\n  },\n  {\n    \"title\": \"For a moment i thought that Cici is going to leave me. I thought he was saying goodbye to me but at the sound of a treats he decided to stick with me after all. Phew what a relief. 😮‍💨😮‍💨😮‍💨\",\n    \"link\": \"https://www.reddit.com/gallery/1plpp0w\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"Cici_the_Gentleman\",\n    \"upVotes\": 1708\n  },\n  {\n    \"title\": \"[OC] I'm here to brighten your day with this baby kitten 🥰\",\n    \"link\": \"https://i.redd.it/3n1ra3mvq17g1.jpeg\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"itskittykiss\",\n    \"upVotes\": 580\n  },\n  {\n    \"title\": \"Just a sleepy puppy\",\n    \"link\": \"https://i.redd.it/bdvuxac8n57g1.jpeg\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"Razorpunk3002\",\n    \"upVotes\": 52\n  },\n  {\n    \"title\": \"Dear Santa, I've been mostly good...\",\n    \"link\": \"https://i.redd.it/johlypesj27g1.jpeg\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"ProudnotLoud\",\n    \"upVotes\": 307\n  },\n  {\n    \"title\": \"Foster Fail\",\n    \"link\": \"https://i.redd.it/iu7wzxsv837g1.jpeg\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"TheDemonVillian\",\n    \"upVotes\": 185\n  },\n  {\n    \"title\": \"His smile!!!!!\",\n    \"link\": \"https://i.redd.it/iz3ns5pdn27g1.jpeg\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"exmo-in-flames\",\n    \"upVotes\": 250\n  }\n]"
+        }
+      ],
+      "tool_call_id": "call_wkfUrjrkttDOyTQwFZqjDw81",
+      "id": "66b7e274-0e4d-4b9d-8e3f-7ec0f28a0419",
+      "createdAt": "2025-12-14T14:04:54.401Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Here's a recent Reddit post for you:\n\n**Title:** [Kids’ early Christmas present after years of asking. Meet Lavender 😍](https://www.reddit.com/gallery/1pm2wmt)  \n**Subreddit:** r/aww  \n**Author:** BlueCrayolaTeal  \n**Upvotes:** 12,484  \n\nIf you'd like to see more posts or a specific topic, just let me know!",
+      "refusal": null,
+      "reasoning": null,
+      "id": "414be1b5-b9db-46b7-b008-2e01a432e3e9",
+      "createdAt": "2025-12-14T14:04:58.713Z"
+    },
+    {
+      "role": "user",
+      "content": "do u remember my name",
+      "id": "2a2b7b0d-571c-43f0-aae6-5a4e95976ab7",
+      "createdAt": "2025-12-14T14:34:31.636Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, your name is Abel! How can I assist you further today?",
+      "refusal": null,
+      "reasoning": null,
+      "id": "1ba411c4-d531-43be-a47c-9bc1ef4781ee",
+      "createdAt": "2025-12-14T14:34:33.639Z"
+    },
+    {
+      "role": "user",
+      "content": "give me your last message",
+      "id": "6a760fcb-fba7-4dd0-bfbd-97eae7b963de",
+      "createdAt": "2025-12-14T14:46:03.302Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Here's my last message:\n\n\"Here's a recent Reddit post for you:\n\n**Title:** [Kids’ early Christmas present after years of asking. Meet Lavender 😍](https://www.reddit.com/gallery/1pm2wmt)  \n**Subreddit:** r/aww  \n**Author:** BlueCrayolaTeal  \n**Upvotes:** 12,484  \n\nIf you'd like to see more posts or a specific topic, just let me know!\"",
+      "refusal": null,
+      "reasoning": null,
+      "id": "e1b44b0d-ba0d-4829-b129-4cdb273214e8",
+      "createdAt": "2025-12-14T14:46:06.664Z"
+    },
+    {
+      "role": "user",
+      "content": "give me your last message",
+      "id": "6b6065bb-a586-4ac9-bbd3-4135a4d4ba77",
+      "createdAt": "2025-12-14T14:46:53.361Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Here's my last message:\n\n\"Yes, your name is Abel! How can I assist you further today?\"",
+      "refusal": null,
+      "reasoning": null,
+      "id": "e896aa7a-c36f-4106-997b-c1198f943fdf",
+      "createdAt": "2025-12-14T14:46:55.635Z"
+    },
+    {
+      "role": "user",
+      "content": "give me your last message",
+      "id": "cf10dfad-e629-4e30-b805-e77b9a034376",
+      "createdAt": "2025-12-14T14:52:04.547Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Here's my last message:\n\n\"Yes, your name is Abel! How can I assist you further today?\"",
+      "refusal": null,
+      "reasoning": null,
+      "id": "c9d5cc56-71c4-412a-95c1-8fce25fe3777",
+      "createdAt": "2025-12-14T14:52:06.426Z"
+    },
+    {
+      "role": "user",
+      "content": "give me your last message",
+      "id": "35130903-b248-412f-a2dd-d428dc4f24ba",
+      "createdAt": "2025-12-14T15:02:03.143Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Here's my last message:\n\n\"Yes, your name is Abel! How can I assist you further today?\"",
+      "refusal": null,
+      "reasoning": null,
+      "id": "fa8fe47b-6491-49a9-ad48-04cc1a48c814",
+      "createdAt": "2025-12-14T15:02:04.849Z"
+    },
+    {
+      "role": "user",
+      "content": "give me one cool joke and a reddit post",
+      "id": "ddde5b50-0b56-44fd-8d0f-aaa60c1771cf",
+      "createdAt": "2025-12-14T15:02:28.763Z"
+    },
+    {
+      "role": "assistant",
+      "content": "",
+      "refusal": null,
+      "reasoning": null,
+      "tool_calls": [
+        {
+          "index": 0,
+          "id": "call_UJovYg7s6645Y9zIpvCbiWMA",
+          "type": "function",
+          "function": {
+            "name": "dad_joke",
+            "arguments": "{}"
+          }
+        },
+        {
+          "index": 1,
+          "id": "call_MB2o9fAwSncqVk3EmSVQzEOJ",
+          "type": "function",
+          "function": {
+            "name": "sub_reddit_post",
+            "arguments": "{}"
+          }
+        }
+      ],
+      "id": "2246c219-8f37-4885-8379-b61e254b4614",
+      "createdAt": "2025-12-14T15:02:30.945Z"
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "text",
+          "text": "Did you hear about the two thieves who stole a calendar? They each got six months."
+        }
+      ],
+      "tool_call_id": "call_UJovYg7s6645Y9zIpvCbiWMA",
+      "id": "2dc4b089-7aa4-43ea-8993-1d8984ea2d94",
+      "createdAt": "2025-12-14T15:02:31.374Z"
     }
   ]
 }

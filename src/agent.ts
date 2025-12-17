@@ -1,9 +1,9 @@
-import type { AIMessage } from '../types'
-import { runLLM } from './llm'
+import type { AIMessage } from '../types.js'
+import { runLLM } from './llm.js'
 import { z } from 'zod'
-import { runTool } from './toolRunner'
-import { addMessages, getMessages, saveToolResponse } from './memory'
-import { logMessage, showLoader } from './ui'
+import { runTool } from './toolRunner.js'
+import { addMessages, getMessages, saveToolResponse } from './memory.js'
+import { logMessage, showLoader } from './ui.js'
 
 export const runAgent = async ({
   userMessage,
