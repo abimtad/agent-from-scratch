@@ -2,152 +2,9 @@
   "messages": [
     {
       "role": "user",
-      "content": "hi, am abel. what is the weather in my current place ",
-      "id": "41665ad4-18fa-406c-843e-b7f961cca8dc",
-      "createdAt": "2025-11-29T13:11:00.256Z"
-    },
-    {
-      "annotations": [],
-      "content": null,
-      "refusal": null,
-      "role": "assistant",
-      "tool_calls": [
-        {
-          "function": {
-            "arguments": "{}",
-            "name": "get_weather"
-          },
-          "id": "call_6Mz9kcmQKVz8TylSSeGcuybN",
-          "type": "function"
-        }
-      ],
-      "id": "6993f7ea-6691-402c-be70-e72ae3a34359",
-      "createdAt": "2025-11-29T13:11:02.106Z"
-    },
-    {
-      "role": "tool",
-      "content": "very cold. 17deg",
-      "tool_call_id": "call_6Mz9kcmQKVz8TylSSeGcuybN",
-      "id": "652a7b63-c372-4c25-b383-0031ac2fdddd",
-      "createdAt": "2025-11-29T13:11:02.115Z"
-    },
-    {
-      "annotations": [],
-      "content": "Hi Abel! The weather in your current location is very cold, with a temperature of 17 degrees. Make sure to dress warmly!",
-      "refusal": null,
-      "role": "assistant",
-      "id": "5d586c73-3b16-4436-9474-464d1c3dcd34",
-      "createdAt": "2025-11-29T13:11:03.974Z"
-    },
-    {
-      "role": "user",
-      "content": "hi, could u tell me a joke",
-      "id": "a58f3a32-d0b9-4a12-9ecf-9a58b5d36fba",
-      "createdAt": "2025-11-29T19:08:25.640Z"
-    },
-    {
-      "annotations": [],
-      "content": null,
-      "refusal": null,
-      "role": "assistant",
-      "tool_calls": [
-        {
-          "function": {
-            "arguments": "{}",
-            "name": "dad_joke"
-          },
-          "id": "call_XpbiG0JcovNvdMFUtGj4gchS",
-          "type": "function"
-        }
-      ],
-      "id": "ab2be220-ee00-4ad7-b6c6-a6a9ce0333f9",
-      "createdAt": "2025-11-29T19:08:29.825Z"
-    },
-    {
-      "role": "tool",
-      "content": "Whats a penguins favorite relative? Aunt Arctica.",
-      "tool_call_id": "call_XpbiG0JcovNvdMFUtGj4gchS",
-      "id": "70038771-9c86-4cc9-b4f3-4f6ace222338",
-      "createdAt": "2025-11-29T19:08:30.992Z"
-    },
-    {
-      "annotations": [],
-      "content": "Sure! Here's a joke for you: \n\nWhat's a penguin's favorite relative? \n\nAunt Arctica! 🐧❄️",
-      "refusal": null,
-      "role": "assistant",
-      "id": "2427bf29-93e9-4dfb-ac29-c3d151cec96c",
-      "createdAt": "2025-11-29T19:08:32.674Z"
-    },
-    {
-      "role": "user",
-      "content": "give me the latest post from reddit",
-      "id": "92480c41-0bee-4f6b-bee7-be8636aaa6d5",
-      "createdAt": "2025-11-29T19:09:09.160Z"
-    },
-    {
-      "annotations": [],
-      "content": null,
-      "refusal": null,
-      "role": "assistant",
-      "tool_calls": [
-        {
-          "function": {
-            "arguments": "{}",
-            "name": "reddit"
-          },
-          "id": "call_8rWiW2dh7BXQI6kEb4X49sgp",
-          "type": "function"
-        }
-      ],
-      "id": "29660dd7-3eb4-482f-8408-765fc5d342e6",
-      "createdAt": "2025-11-29T19:09:11.233Z"
-    },
-    {
-      "role": "tool",
-      "content": "[\n  {\n    \"title\": \"/r/aww is going OC-only\",\n    \"link\": \"https://www.reddit.com/r/aww/comments/171dxph/raww_is_going_oconly/\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"AutoModerator\",\n    \"upVotes\": 2461\n  },\n  {\n    \"title\": \"Still a cat person.\",\n    \"link\": \"https://www.reddit.com/gallery/1p9mywr\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"OldSet0\",\n    \"upVotes\": 6150\n  },\n  {\n    \"title\": \"Found the warmest spot in the house.\",\n    \"link\": \"https://www.reddit.com/gallery/1p9pc7x\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"Emptydata_Enzo\",\n    \"upVotes\": 1535\n  },\n  {\n    \"title\": \"My cat whenever I eat something\",\n    \"link\": \"https://i.redd.it/2mqnm7g2j74g1.jpeg\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"Headhaunter79\",\n    \"upVotes\": 1156\n  },\n  {\n    \"title\": \"Adopted a cat called Frank. Here he is enjoying his first Christmas Tree.\",\n    \"link\": \"https://www.reddit.com/gallery/1p9bwif\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"The_Durd\",\n    \"upVotes\": 11404\n  },\n  {\n    \"title\": \"It's this fluffy, good boy's birthday today!\",\n    \"link\": \"https://www.reddit.com/gallery/1p9szf7\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"RickyBobbyIRL\",\n    \"upVotes\": 414\n  },\n  {\n    \"title\": \"Had 5 German Shepherd puppies back in 2022… pure fluffy chaos 😂🐶\",\n    \"link\": \"https://v.redd.it/n05saus5064g1\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"ChusinOne\",\n    \"upVotes\": 1659\n  },\n  {\n    \"title\": \"A new cat has been coming by for the past few days to eat for free! He can only see from one eye, I call him Pirate!\\\"\",\n    \"link\": \"https://www.reddit.com/gallery/1p9tyyu\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"Enrico00000\",\n    \"upVotes\": 290\n  },\n  {\n    \"title\": \"Look at this little cutie 😻\",\n    \"link\": \"https://i.redd.it/gngk1cpie84g1.jpeg\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"NaturalPromotion3282\",\n    \"upVotes\": 210\n  },\n  {\n    \"title\": \"Bonnie McPurray keeps her brother Jonesy nice and clean\",\n    \"link\": \"https://v.redd.it/v8xwid7zi74g1\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"mac_is_crack\",\n    \"upVotes\": 288\n  },\n  {\n    \"title\": \"My mom's dog likes to \\\"bury\\\" her toys in blankets and then dig them up.  She can entertain herself for hours like this!\",\n    \"link\": \"https://v.redd.it/7n687ushh84g1\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"Makou3347\",\n    \"upVotes\": 154\n  },\n  {\n    \"title\": \"I love you, my beautiful mini lion 😍🦁\",\n    \"link\": \"https://i.redd.it/5hd7za2fo74g1.jpeg\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"sunrise9sunset\",\n    \"upVotes\": 251\n  },\n  {\n    \"title\": \"[OC] Sassy baby giving mom attitude on very first day out of nest before posing alone with imaginary friend\",\n    \"link\": \"https://www.reddit.com/gallery/1p9jqhk\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"jplmnop\",\n    \"upVotes\": 565\n  },\n  {\n    \"title\": \"Our cat is getting frighteningly good at saying “Hello!” Whenever it wants to play. We do this every single night around 10:30pm.\",\n    \"link\": \"https://v.redd.it/a58anl8l744g1\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"KillerQ97\",\n    \"upVotes\": 1399\n  },\n  {\n    \"title\": \"My great niece Tionna is here to brighten your day 🫶🏽\",\n    \"link\": \"https://www.reddit.com/gallery/1p9g2h6\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"duckawce\",\n    \"upVotes\": 955\n  },\n  {\n    \"title\": \"Sister Mary Ween sends you a heckin blessin ❤️\",\n    \"link\": \"https://i.redd.it/vpvnkpog154g1.jpeg\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"The_MagnificentMegan\",\n    \"upVotes\": 702\n  },\n  {\n    \"title\": \"pinko sends pretty faces\",\n    \"link\": \"https://i.redd.it/aduu4wzn684g1.jpeg\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"Nora_mathisen\",\n    \"upVotes\": 99\n  },\n  {\n    \"title\": \"The cute Pico from our shelter. He’s part of a “catch and release” program from another town but he’s not going to be release. We will find him a good home instead.\",\n    \"link\": \"https://i.redd.it/sci3y9tkm04g1.jpeg\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"sonia72quebec\",\n    \"upVotes\": 9312\n  },\n  {\n    \"title\": \"Just sharing the luna pic of today 🐱\",\n    \"link\": \"https://i.redd.it/nahlobv3d74g1.jpeg\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"Immediate-Cost6716\",\n    \"upVotes\": 108\n  },\n  {\n    \"title\": \"Senior flööf\",\n    \"link\": \"https://i.redd.it/lqbux5df324g1.jpeg\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"GENERAT10N_D00M\",\n    \"upVotes\": 2597\n  },\n  {\n    \"title\": \"He stole my blanket and has zero regrets\",\n    \"link\": \"https://i.redd.it/6811cegoh74g1.jpeg\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"m3r1tc4n\",\n    \"upVotes\": 91\n  },\n  {\n    \"title\": \"heres my pretty baby enjoying her favorite treat\",\n    \"link\": \"https://www.reddit.com/gallery/1p9nqum\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"nobeanleftbehind\",\n    \"upVotes\": 111\n  },\n  {\n    \"title\": \"Ellie begging very politely for some turkey while we carved it 🦃\",\n    \"link\": \"https://i.redd.it/1f5megte204g1.jpeg\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"ProudnotLoud\",\n    \"upVotes\": 6840\n  },\n  {\n    \"title\": \"Momma cat really went ahead and xeroxed herself💞\",\n    \"link\": \"https://i.redd.it/nkptmynhf64g1.jpeg\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"Paradigm10\",\n    \"upVotes\": 121\n  },\n  {\n    \"title\": \"she loves my shoes\",\n    \"link\": \"https://www.reddit.com/gallery/1p9qkii\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"metalsuppository\",\n    \"upVotes\": 56\n  }\n]",
-      "tool_call_id": "call_8rWiW2dh7BXQI6kEb4X49sgp",
-      "id": "dfff0382-61b9-4406-a445-830d72a3757a",
-      "createdAt": "2025-11-29T19:09:12.924Z"
-    },
-    {
-      "annotations": [],
-      "content": "Here’s the latest post from Reddit:\n\n**Title:** [/r/aww is going OC-only](https://www.reddit.com/r/aww/comments/171dxph/raww_is_going_oconly/)  \n**Subreddit:** r/aww  \n**Author:** AutoModerator  \n**Upvotes:** 2461  \n\nIf you'd like to see more posts or a specific topic, just let me know!",
-      "refusal": null,
-      "role": "assistant",
-      "id": "89789443-bfaa-4244-83b4-e2b1487c22b5",
-      "createdAt": "2025-11-29T19:09:14.813Z"
-    },
-    {
-      "role": "user",
-      "content": "give me the latest post from reddit",
-      "id": "2abed084-8cf9-495b-bb6a-9f478d9ad15e",
-      "createdAt": "2025-11-30T08:27:01.231Z"
-    },
-    {
-      "annotations": [],
-      "content": "Here’s another recent post from Reddit:\n\n**Title:** [Still a cat person.](https://www.reddit.com/gallery/1p9mywr)  \n**Subreddit:** r/aww  \n**Author:** OldSet0  \n**Upvotes:** 6150  \n\nIf you want to see more or a different topic, feel free to ask!",
-      "refusal": null,
-      "role": "assistant",
-      "id": "dbd63a23-3a80-425a-b316-d7c2401ed435",
-      "createdAt": "2025-11-30T08:27:04.015Z"
-    },
-    {
-      "role": "user",
-      "content": "give me some new joke",
-      "id": "cf8d2af5-92cc-46d5-b3b7-9ea58724cb80",
-      "createdAt": "2025-12-14T13:45:15.904Z"
-    },
-    {
-      "role": "user",
-      "content": "give me some new joke",
-      "id": "1ca790fe-362a-4952-a424-f55ad789d8e3",
-      "createdAt": "2025-12-14T13:54:45.034Z"
-    },
-    {
-      "role": "user",
-      "content": "give me some new joke",
-      "id": "53613e69-ee0a-4dd8-9cc3-c742d53fed31",
-      "createdAt": "2025-12-14T14:04:26.482Z"
+      "content": "tell me a jokes",
+      "id": "60f593b0-2def-4f9c-9b54-368d9078e90c",
+      "createdAt": "2025-12-28T12:32:50.356Z"
     },
     {
       "role": "assistant",
@@ -157,7 +14,7 @@
       "tool_calls": [
         {
           "index": 0,
-          "id": "call_WdH6OnCTSmPsS2r9TroNoUg3",
+          "id": "call_iKfkZVLpFrUany6VXEHcpuGi",
           "type": "function",
           "function": {
             "name": "dad_joke",
@@ -165,34 +22,34 @@
           }
         }
       ],
-      "id": "7fe27d0c-8263-40f0-a826-c0422a94c8c8",
-      "createdAt": "2025-12-14T14:04:29.027Z"
+      "id": "3d105b9c-4a8b-4629-81be-966ef6835685",
+      "createdAt": "2025-12-28T12:32:51.887Z"
     },
     {
       "role": "tool",
       "content": [
         {
           "type": "text",
-          "text": "Why do pirates not know the alphabet? They always get stuck at \"C\"."
+          "text": "What is the hardest part about sky diving? The ground."
         }
       ],
-      "tool_call_id": "call_WdH6OnCTSmPsS2r9TroNoUg3",
-      "id": "c9aa41e9-a5eb-4435-b106-f1fe29103eb7",
-      "createdAt": "2025-12-14T14:04:29.654Z"
+      "tool_call_id": "call_iKfkZVLpFrUany6VXEHcpuGi",
+      "id": "8d48c136-65fa-41dc-b24b-e5916d77e0f3",
+      "createdAt": "2025-12-28T12:32:53.373Z"
     },
     {
       "role": "assistant",
-      "content": "Here's a new joke for you:\n\nWhy do pirates not know the alphabet? \n\nThey always get stuck at \"C\"! 🏴‍☠️😂",
+      "content": "Here's a joke for you: What is the hardest part about sky diving? The ground!",
       "refusal": null,
       "reasoning": null,
-      "id": "d67886d0-2f9e-4b33-8227-e9ff2704471d",
-      "createdAt": "2025-12-14T14:04:30.976Z"
+      "id": "27d872fb-3656-44e7-b5dc-d07e5fa44827",
+      "createdAt": "2025-12-28T12:32:54.502Z"
     },
     {
       "role": "user",
-      "content": "give me a reddit post",
-      "id": "271579b1-fbab-4206-8e87-2490ea195b84",
-      "createdAt": "2025-12-14T14:04:51.170Z"
+      "content": "tell me a jokes",
+      "id": "047bfed5-e55d-464f-9e21-ee8402fb1c00",
+      "createdAt": "2025-12-28T13:13:51.259Z"
     },
     {
       "role": "assistant",
@@ -202,152 +59,171 @@
       "tool_calls": [
         {
           "index": 0,
-          "id": "call_wkfUrjrkttDOyTQwFZqjDw81",
-          "type": "function",
-          "function": {
-            "name": "sub_reddit_post",
-            "arguments": "{}"
-          }
-        }
-      ],
-      "id": "8b4b261d-1de3-4f8b-85cf-e983e7c7d57e",
-      "createdAt": "2025-12-14T14:04:53.248Z"
-    },
-    {
-      "role": "tool",
-      "content": [
-        {
-          "type": "text",
-          "text": "[\n  {\n    \"title\": \"/r/aww is going OC-only\",\n    \"link\": \"https://www.reddit.com/r/aww/comments/171dxph/raww_is_going_oconly/\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"AutoModerator\",\n    \"upVotes\": 2472\n  },\n  {\n    \"title\": \"Kids’ early Christmas present after years of asking. Meet Lavender 😍\",\n    \"link\": \"https://www.reddit.com/gallery/1pm2wmt\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"BlueCrayolaTeal\",\n    \"upVotes\": 12484\n  },\n  {\n    \"title\": \"New kitty we adopted is super photogenic\",\n    \"link\": \"https://i.redd.it/brbvx2udb47g1.jpeg\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"Everdale\",\n    \"upVotes\": 3591\n  },\n  {\n    \"title\": \"Lazy Saturdays. Nothing like a cat pillow 🥰\",\n    \"link\": \"https://www.reddit.com/gallery/1plv47c\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"Ralph_the_Cat\",\n    \"upVotes\": 7318\n  },\n  {\n    \"title\": \"These photos cost me my personal space.\",\n    \"link\": \"https://www.reddit.com/gallery/1pm8net\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"Sir_Adammm\",\n    \"upVotes\": 609\n  },\n  {\n    \"title\": \"My sweet girl before and after I adopted her. I have her for 4 years now and she is my little light.\",\n    \"link\": \"https://i.redd.it/j54ybls2367g1.png\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"No-Afternoon-1243\",\n    \"upVotes\": 261\n  },\n  {\n    \"title\": \"Buckets says hi\",\n    \"link\": \"https://i.redd.it/quqqnnem627g1.jpeg\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"Nuggets_Bt_Newer\",\n    \"upVotes\": 2073\n  },\n  {\n    \"title\": \"My boy is a bit photogenic:\",\n    \"link\": \"https://www.reddit.com/gallery/1pmbzjf\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"Neonvarel\",\n    \"upVotes\": 218\n  },\n  {\n    \"title\": \"Ellie was very proud of herself after catching a mouse in the house!\",\n    \"link\": \"https://i.redd.it/exixqieh4z6g1.jpeg\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"ProudnotLoud\",\n    \"upVotes\": 18393\n  },\n  {\n    \"title\": \"Miso loves gaming time with my partner 🥰\",\n    \"link\": \"https://www.reddit.com/gallery/1pmalo1\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"Koffievos\",\n    \"upVotes\": 260\n  },\n  {\n    \"title\": \"Dogs are the cheat code to happiness\",\n    \"link\": \"https://v.redd.it/84gvr15mu47g1\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"cturn3r\",\n    \"upVotes\": 313\n  },\n  {\n    \"title\": \"Caught My Cat Being Too Cute Again 😹\",\n    \"link\": \"https://i.redd.it/lkllrvknp17g1.png\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"EFM-Network\",\n    \"upVotes\": 1518\n  },\n  {\n    \"title\": \"My mom’s cat with a permanently grumpy face\",\n    \"link\": \"https://i.redd.it/034b8pwda17g1.jpeg\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"12_oz_senkin\",\n    \"upVotes\": 1782\n  },\n  {\n    \"title\": \"Sometimes the cats of my parents join me and my dog on our walk 🤭\",\n    \"link\": \"https://v.redd.it/1jn57rlaqx6g1\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"CropFairy\",\n    \"upVotes\": 29183\n  },\n  {\n    \"title\": \"Fluffy butt. Cute expression. Tiny body. Beautiful wings. This might be the cutest hummingbird photo I’ve taken.\",\n    \"link\": \"https://i.redd.it/oiaqkwa4h37g1.jpeg\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"9VoltGorilla\",\n    \"upVotes\": 349\n  },\n  {\n    \"title\": \"16 degrees out btw, he loves the snow for a 5 pound dog!\",\n    \"link\": \"https://www.reddit.com/gallery/1pm0txg\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"mikrenArt\",\n    \"upVotes\": 600\n  },\n  {\n    \"title\": \"my baby milo and mcdo\",\n    \"link\": \"https://i.redd.it/mji79n6oy57g1.png\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"Jaded-Bobcat7407\",\n    \"upVotes\": 70\n  },\n  {\n    \"title\": \"A tiny pug baby, only hours old 💕\",\n    \"link\": \"https://i.redd.it/mbghixv2d17g1.jpeg\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"Carob_971\",\n    \"upVotes\": 1125\n  },\n  {\n    \"title\": \"He gives me this sweet smile every time he wants attention.\",\n    \"link\": \"https://i.redd.it/sueqdjvqc27g1.jpeg\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"Emotional-Demand-180\",\n    \"upVotes\": 524\n  },\n  {\n    \"title\": \"For a moment i thought that Cici is going to leave me. I thought he was saying goodbye to me but at the sound of a treats he decided to stick with me after all. Phew what a relief. 😮‍💨😮‍💨😮‍💨\",\n    \"link\": \"https://www.reddit.com/gallery/1plpp0w\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"Cici_the_Gentleman\",\n    \"upVotes\": 1708\n  },\n  {\n    \"title\": \"[OC] I'm here to brighten your day with this baby kitten 🥰\",\n    \"link\": \"https://i.redd.it/3n1ra3mvq17g1.jpeg\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"itskittykiss\",\n    \"upVotes\": 580\n  },\n  {\n    \"title\": \"Just a sleepy puppy\",\n    \"link\": \"https://i.redd.it/bdvuxac8n57g1.jpeg\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"Razorpunk3002\",\n    \"upVotes\": 52\n  },\n  {\n    \"title\": \"Dear Santa, I've been mostly good...\",\n    \"link\": \"https://i.redd.it/johlypesj27g1.jpeg\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"ProudnotLoud\",\n    \"upVotes\": 307\n  },\n  {\n    \"title\": \"Foster Fail\",\n    \"link\": \"https://i.redd.it/iu7wzxsv837g1.jpeg\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"TheDemonVillian\",\n    \"upVotes\": 185\n  },\n  {\n    \"title\": \"His smile!!!!!\",\n    \"link\": \"https://i.redd.it/iz3ns5pdn27g1.jpeg\",\n    \"subreddit\": \"r/aww\",\n    \"author\": \"exmo-in-flames\",\n    \"upVotes\": 250\n  }\n]"
-        }
-      ],
-      "tool_call_id": "call_wkfUrjrkttDOyTQwFZqjDw81",
-      "id": "66b7e274-0e4d-4b9d-8e3f-7ec0f28a0419",
-      "createdAt": "2025-12-14T14:04:54.401Z"
-    },
-    {
-      "role": "assistant",
-      "content": "Here's a recent Reddit post for you:\n\n**Title:** [Kids’ early Christmas present after years of asking. Meet Lavender 😍](https://www.reddit.com/gallery/1pm2wmt)  \n**Subreddit:** r/aww  \n**Author:** BlueCrayolaTeal  \n**Upvotes:** 12,484  \n\nIf you'd like to see more posts or a specific topic, just let me know!",
-      "refusal": null,
-      "reasoning": null,
-      "id": "414be1b5-b9db-46b7-b008-2e01a432e3e9",
-      "createdAt": "2025-12-14T14:04:58.713Z"
-    },
-    {
-      "role": "user",
-      "content": "do u remember my name",
-      "id": "2a2b7b0d-571c-43f0-aae6-5a4e95976ab7",
-      "createdAt": "2025-12-14T14:34:31.636Z"
-    },
-    {
-      "role": "assistant",
-      "content": "Yes, your name is Abel! How can I assist you further today?",
-      "refusal": null,
-      "reasoning": null,
-      "id": "1ba411c4-d531-43be-a47c-9bc1ef4781ee",
-      "createdAt": "2025-12-14T14:34:33.639Z"
-    },
-    {
-      "role": "user",
-      "content": "give me your last message",
-      "id": "6a760fcb-fba7-4dd0-bfbd-97eae7b963de",
-      "createdAt": "2025-12-14T14:46:03.302Z"
-    },
-    {
-      "role": "assistant",
-      "content": "Here's my last message:\n\n\"Here's a recent Reddit post for you:\n\n**Title:** [Kids’ early Christmas present after years of asking. Meet Lavender 😍](https://www.reddit.com/gallery/1pm2wmt)  \n**Subreddit:** r/aww  \n**Author:** BlueCrayolaTeal  \n**Upvotes:** 12,484  \n\nIf you'd like to see more posts or a specific topic, just let me know!\"",
-      "refusal": null,
-      "reasoning": null,
-      "id": "e1b44b0d-ba0d-4829-b129-4cdb273214e8",
-      "createdAt": "2025-12-14T14:46:06.664Z"
-    },
-    {
-      "role": "user",
-      "content": "give me your last message",
-      "id": "6b6065bb-a586-4ac9-bbd3-4135a4d4ba77",
-      "createdAt": "2025-12-14T14:46:53.361Z"
-    },
-    {
-      "role": "assistant",
-      "content": "Here's my last message:\n\n\"Yes, your name is Abel! How can I assist you further today?\"",
-      "refusal": null,
-      "reasoning": null,
-      "id": "e896aa7a-c36f-4106-997b-c1198f943fdf",
-      "createdAt": "2025-12-14T14:46:55.635Z"
-    },
-    {
-      "role": "user",
-      "content": "give me your last message",
-      "id": "cf10dfad-e629-4e30-b805-e77b9a034376",
-      "createdAt": "2025-12-14T14:52:04.547Z"
-    },
-    {
-      "role": "assistant",
-      "content": "Here's my last message:\n\n\"Yes, your name is Abel! How can I assist you further today?\"",
-      "refusal": null,
-      "reasoning": null,
-      "id": "c9d5cc56-71c4-412a-95c1-8fce25fe3777",
-      "createdAt": "2025-12-14T14:52:06.426Z"
-    },
-    {
-      "role": "user",
-      "content": "give me your last message",
-      "id": "35130903-b248-412f-a2dd-d428dc4f24ba",
-      "createdAt": "2025-12-14T15:02:03.143Z"
-    },
-    {
-      "role": "assistant",
-      "content": "Here's my last message:\n\n\"Yes, your name is Abel! How can I assist you further today?\"",
-      "refusal": null,
-      "reasoning": null,
-      "id": "fa8fe47b-6491-49a9-ad48-04cc1a48c814",
-      "createdAt": "2025-12-14T15:02:04.849Z"
-    },
-    {
-      "role": "user",
-      "content": "give me one cool joke and a reddit post",
-      "id": "ddde5b50-0b56-44fd-8d0f-aaa60c1771cf",
-      "createdAt": "2025-12-14T15:02:28.763Z"
-    },
-    {
-      "role": "assistant",
-      "content": "",
-      "refusal": null,
-      "reasoning": null,
-      "tool_calls": [
-        {
-          "index": 0,
-          "id": "call_UJovYg7s6645Y9zIpvCbiWMA",
+          "id": "call_H29dUpeDvP9EkDwRjQeb1iXr",
           "type": "function",
           "function": {
             "name": "dad_joke",
             "arguments": "{}"
           }
-        },
-        {
-          "index": 1,
-          "id": "call_MB2o9fAwSncqVk3EmSVQzEOJ",
-          "type": "function",
-          "function": {
-            "name": "sub_reddit_post",
-            "arguments": "{}"
-          }
         }
       ],
-      "id": "2246c219-8f37-4885-8379-b61e254b4614",
-      "createdAt": "2025-12-14T15:02:30.945Z"
+      "id": "1a017032-3f59-4d3c-a484-928bb187bc9a",
+      "createdAt": "2025-12-28T13:13:52.434Z"
     },
     {
       "role": "tool",
       "content": [
         {
           "type": "text",
-          "text": "Did you hear about the two thieves who stole a calendar? They each got six months."
+          "text": "Past, present, and future walked into a bar.... It was tense."
         }
       ],
-      "tool_call_id": "call_UJovYg7s6645Y9zIpvCbiWMA",
-      "id": "2dc4b089-7aa4-43ea-8993-1d8984ea2d94",
-      "createdAt": "2025-12-14T15:02:31.374Z"
+      "tool_call_id": "call_H29dUpeDvP9EkDwRjQeb1iXr",
+      "id": "83cb2f8b-36d4-40d8-985c-3347f0c2a5b4",
+      "createdAt": "2025-12-28T13:13:52.976Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Here's another joke for you: Past, present, and future walked into a bar.... It was tense!",
+      "refusal": null,
+      "reasoning": null,
+      "id": "7ee41e17-107d-40f7-a4e8-5e22d4624f9a",
+      "createdAt": "2025-12-28T13:13:54.415Z"
+    },
+    {
+      "role": "user",
+      "content": "tell me a jokes",
+      "id": "c6ed64b7-58f0-42fa-8a84-326cea6290d8",
+      "createdAt": "2025-12-28T13:19:41.443Z"
+    },
+    {
+      "role": "assistant",
+      "content": "",
+      "refusal": null,
+      "reasoning": null,
+      "tool_calls": [
+        {
+          "index": 0,
+          "id": "call_5b1Ha8rt6xmHOTXJbinzwemk",
+          "type": "function",
+          "function": {
+            "name": "dad_joke",
+            "arguments": "{}"
+          }
+        }
+      ],
+      "id": "69323651-eb8a-453e-817c-999c9bb10e79",
+      "createdAt": "2025-12-28T13:19:42.620Z"
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "text",
+          "text": "What do you call someone with no nose? Nobody knows."
+        }
+      ],
+      "tool_call_id": "call_5b1Ha8rt6xmHOTXJbinzwemk",
+      "id": "267b8b71-a07a-4aa0-8a85-3095f444c0dc",
+      "createdAt": "2025-12-28T13:19:43.145Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Here's a joke for you: What do you call someone with no nose? Nobody knows!",
+      "refusal": null,
+      "reasoning": null,
+      "id": "622b2180-aedb-481b-be21-ae1db4776229",
+      "createdAt": "2025-12-28T13:19:44.015Z"
+    },
+    {
+      "role": "user",
+      "content": "tell me a jokes",
+      "id": "0456f68f-65c2-45c3-a7ba-b1565fc37c85",
+      "createdAt": "2025-12-28T13:24:21.706Z"
+    },
+    {
+      "role": "assistant",
+      "content": "",
+      "refusal": null,
+      "reasoning": null,
+      "tool_calls": [
+        {
+          "index": 0,
+          "id": "call_n3e5vJBgvcaNgwFchaHMHZMc",
+          "type": "function",
+          "function": {
+            "name": "dad_joke",
+            "arguments": "{}"
+          }
+        }
+      ],
+      "id": "230315b6-b137-4e35-b0e7-acb7015c44ef",
+      "createdAt": "2025-12-28T13:24:24.008Z"
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "text",
+          "text": "What is the leading cause of dry skin? Towels"
+        }
+      ],
+      "tool_call_id": "call_n3e5vJBgvcaNgwFchaHMHZMc",
+      "id": "a9547e51-2068-4947-af02-a9ad3e63190c",
+      "createdAt": "2025-12-28T13:24:24.519Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Here's another joke for you: What is the leading cause of dry skin? Towels!",
+      "refusal": null,
+      "reasoning": null,
+      "id": "596d83cd-b3f3-4e65-a9dc-0588dd199e6e",
+      "createdAt": "2025-12-28T13:24:25.321Z"
+    },
+    {
+      "role": "user",
+      "content": "tell me a jokes",
+      "id": "0cc66ce8-8a79-4f0e-b323-fec452c44d99",
+      "createdAt": "2025-12-28T13:25:28.202Z"
+    },
+    {
+      "role": "assistant",
+      "content": "",
+      "refusal": null,
+      "reasoning": null,
+      "tool_calls": [
+        {
+          "index": 0,
+          "id": "call_eUWfcir2WDMX1ygGZeafzwFP",
+          "type": "function",
+          "function": {
+            "name": "dad_joke",
+            "arguments": "{}"
+          }
+        }
+      ],
+      "id": "3fc90417-fe27-41a8-a781-b686962d48d2",
+      "createdAt": "2025-12-28T13:25:29.745Z"
+    },
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "text",
+          "text": "What do you get when you cross a bee and a sheep? A bah-humbug.\r\n"
+        }
+      ],
+      "tool_call_id": "call_eUWfcir2WDMX1ygGZeafzwFP",
+      "id": "e7b2c6ce-4981-464f-ba55-5fe1334a2e61",
+      "createdAt": "2025-12-28T13:25:30.338Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Here's a fun one: What do you get when you cross a bee and a sheep? A bah-humbug!",
+      "refusal": null,
+      "reasoning": null,
+      "id": "9cd50cf4-05d7-48c8-bbd6-54a08886fdea",
+      "createdAt": "2025-12-28T13:25:31.255Z"
     }
   ]
 }

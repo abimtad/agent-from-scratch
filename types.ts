@@ -11,6 +11,6 @@ export type Tool = {
   description?: string;
   parameters?: {[x:string]: unknown}[]
 }
-// export interface ToolFn<A = any, T = any> {
-//   (input: { userMessage: string; toolArgs: A }): Promise<T>
-// }
+export interface ToolFn<A = any, T = any> {
+  (input: { userMessage: string; toolArgs: A }): Promise<T>
+}

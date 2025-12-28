@@ -39,9 +39,7 @@ class MCPClient {
 }
 
 async callMcp(name: string, input: string): Promise<string> {
-	console.log(`[CLIENT] Calling tool: ${name} with input: ${input}`);
 	const result = await this.mcp.callTool({name, input});
-	console.log(`[CLIENT] Got result:`, JSON.stringify(result, null, 2));
 	return result.content as string
 }
 
