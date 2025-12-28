@@ -1,6 +1,6 @@
 import { zodFunction } from 'openai/helpers/zod'
 import type { AIMessage } from '../types'
-import { openai } from './ai'
+import { openai } from './ai.js'
 
 export const runLLM = async ({
   model = 'gpt-4o-mini',

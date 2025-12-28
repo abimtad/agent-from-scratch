@@ -100,11 +100,9 @@ web_modules/
 
 # dotenv environment variable files
 
-.env
 .env.development.local
 .env.test.local
 .env.production.local
-.env.local
 
 # parcel-bundler cache (https://parceljs.org/)
 
@@ -158,7 +156,6 @@ dist
 
 # Stores VSCode versions used for testing VSCode extensions
 
-.vscode-test
 
 # yarn v2
 
@@ -173,7 +170,10 @@ dist
 
 # Finder (MacOS) folder config
 .DS_Store
-.env
 
 db.json 
 .history/
+config.bat
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat

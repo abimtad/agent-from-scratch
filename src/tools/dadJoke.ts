@@ -1,7 +1,7 @@
 import { isParameter } from 'typescript'
-import type { ToolFn } from '../types'
 import { z } from 'zod'
 import fetch from 'node-fetch'
+import type { ToolFn } from '../../types'
 
 export const dadJokeToolDefinition = {
   name: 'dad_joke',
@@ -10,7 +10,7 @@ export const dadJokeToolDefinition = {
 
 type Args = z.infer<typeof dadJokeToolDefinition.parameters>
 
-export const dadJoke: ToolFn<Args, string> = async ({ toolArgs }) => {
+export const dadJoke: ToolFn<Args, string> = async ({toolArgs, userMessage}) => {
   const res = await fetch('https://icanhazdadjoke.com/', {
     headers: {
       Accept: 'application/json',
