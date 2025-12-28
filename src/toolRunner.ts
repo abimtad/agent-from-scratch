@@ -1,33 +1,13 @@
 import type OpenAI from 'openai'
-import { toFloat32Array } from 'openai/core.mjs'
-import { tokenToString } from 'typescript'
-import { get_weather } from './util'
-import type { AIMessage } from '../types'
-import { generateImage } from '../tools/generateImage'
-import { dadJoke } from '../tools/dadJoke'
-import { reddit } from '../tools/reddit'
+
+import { mcpClient } from './mcp/mcp-client/client.js'
 
 export const runTool = async (
   toolCall: OpenAI.Chat.Completions.ChatCompletionMessageToolCall,
   userMessage: string
-) => {
-  const input = {
-    userMessage,
-    toolArgs: JSON.parse(toolCall.function.arguments),
+): Promise<string> => {
+  const toolName = toolCall.function.name
+  const toolArgs = toolCall.function.arguments
+  const tool = await mcpClient.callMcp(toolName, toolArgs)
+  return tool
   }
-
-  switch (toolCall.function.name) {
-    case 'generate_image':
-      const image = await generateImage(input)
-      return image
-
-    case 'dad_joke':
-      return dadJoke(input)
-
-    case 'reddit':
-      return reddit(input)
-
-    default:
-      throw new Error(`Unknown tool: ${toolCall.function.name}`)
-  }
-}

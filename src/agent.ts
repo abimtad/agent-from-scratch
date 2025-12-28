@@ -1,9 +1,9 @@
-import type { AIMessage } from '../types'
-import { runLLM } from './llm'
+import type { AIMessage } from '../types.js'
+import { runLLM } from './llm.js'
 import { z } from 'zod'
-import { runTool } from './toolRunner'
-import { addMessages, getMessages, saveToolResponse } from './memory'
-import { logMessage, showLoader } from './ui'
+import { runTool } from './toolRunner.js'
+import { addMessages, getMessages, saveToolResponse } from './memory.js'
+import { logMessage, showLoader } from './ui.js'
 
 export const runAgent = async ({
   userMessage,
@@ -39,13 +39,14 @@ export const runAgent = async ({
     }
 
     if (response.tool_calls) {
-      const toolCall = response.tool_calls[0]
-      loader.update(`executing: ${toolCall.function.name}`)
+      for (const toolCall of response.tool_calls) {
+        loader.update(`executing: ${toolCall.function.name}`)
 
-      const toolResponse = await runTool(toolCall, userMessage)
-      await saveToolResponse(toolCall.id, toolResponse)
+        const toolResponse = await runTool(toolCall, userMessage)
+        await saveToolResponse(toolCall.id, toolResponse)
 
-      loader.update(`executed: ${toolCall.function.name}`)
+        loader.update(`executed: ${toolCall.function.name}`)
+      }
     }
   }
 }
