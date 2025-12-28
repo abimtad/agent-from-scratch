@@ -14,3 +14,16 @@ export type Tool = {
 export interface ToolFn<A = any, T = any> {
   (input: { userMessage: string; toolArgs: A }): Promise<T>
 }
+
+export type Movie = {
+  Title: string;
+  Year: string;
+  Genre: string;
+  Description: string;
+  Director: string;
+  Actors: string;
+  Rating: string;
+  Votes: string;
+  Revenue: string;
+  Metascore: string;
+};

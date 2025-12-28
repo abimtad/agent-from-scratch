@@ -1,7 +1,8 @@
 import 'dotenv/config'
 import { runAgent } from './src/agent.js'
-import { mcpClient } from './src/mcp/mcp-client/client.js';
-import { z } from 'zod';
+import { mcpClient } from './src/mcp/mcp-client/client.js'
+import { z } from 'zod'
+import { tools as localTools } from './src/tools/index.js'
 
 async function main() {
   try {
@@ -13,12 +14,11 @@ async function main() {
       process.exit(1)
     }
 
-    const rawTools = mcpClient.getTools();
-    const tools = rawTools.map((tool) => ({
-      name: tool.name,
-      description: tool.description,
-      parameters: z.object({}), // Create an empty Zod schema
-    }));
+    const tools = Object.values(localTools).map((def: any) => ({
+      name: def.name,
+      description: def.description,
+      parameters: def.parameters ?? z.object({}),
+    }))
     await runAgent({ userMessage, tools })
   } catch (e) {
     console.error("Error:", e);

@@ -3,6 +3,7 @@ import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import {dadJoke} from "../../tools/dadJoke"
 import { reddit } from "../../tools/reddit";
+import { movieSearch } from "../../tools/movieSearch";
 import { generateImage } from "../../tools/generateImage";
 import { z } from "zod";
 
@@ -70,6 +71,31 @@ server.registerTool("generate_image",  {
         ],
       };
 	  console.log(`[SERVER] Tool 'generate_image' returning:`, JSON.stringify(result, null, 2));
+	  return result;
+  }
+)
+
+server.registerTool("movie_search",  {
+  title: "Search movies",
+  description: "Searches for movies with optional genre and director filters",
+  inputSchema: {
+    query: z.string().describe("The search query for finding movies") as unknown as any,
+    genre: z.string().nullable().describe("Filter movies by genre") as unknown as any,
+    director: z.string().nullable().describe("Filter movies by director") as unknown as any,
+  }
+},
+  async (input: { query: string; genre: string | null; director: string | null }) => {
+    const results = await movieSearch({ toolArgs: input, userMessage: "" })
+    const result = {
+        content: [
+          {
+            type: "text" as const,
+            text: `${results}`,
+          },
+        ],
+      };
+
+	  console.log(`[SERVER] Tool 'movie_search' returning:`, JSON.stringify(result, null, 2));
 	  return result;
   }
 )

@@ -38,9 +38,28 @@ class MCPClient {
   }
 }
 
-async callMcp(name: string, input: string): Promise<string> {
-	const result = await this.mcp.callTool({name, input});
-	return result.content as string
+async callMcp(name: string, args: unknown): Promise<string> {
+  let argsObj: Record<string, unknown> | undefined
+
+  if (typeof args === 'string') {
+    try {
+      argsObj = args ? JSON.parse(args) : undefined
+    } catch (e) {
+      argsObj = undefined
+    }
+  } else if (args && typeof args === 'object') {
+    argsObj = args as Record<string, unknown>
+  }
+
+  const result = await this.mcp.callTool({ name, arguments: argsObj }) as {
+    content?: Array<{ type: 'text'; text: string } & Record<string, unknown>>;
+  };
+
+  const first = Array.isArray(result.content) ? result.content[0] : undefined;
+  if (first?.type === 'text') {
+    return first.text;
+  }
+  return JSON.stringify(result.content ?? [])
 }
 
 

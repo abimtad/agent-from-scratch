@@ -1,9 +1,11 @@
-import { generateImageToolDefinition } from './generateImage.js'
-import { redditToolDefinition } from './reddit.js'
-import { dadJokeToolDefinition } from './dadJoke.js'
+import { generateImageToolDefinition } from './generateImage'
+import { redditToolDefinition } from './reddit'
+import { dadJokeToolDefinition } from './dadJoke'
+import { movieSearchToolDefinition } from './movieSearch'
 
 export const tools = {
   generateImageToolDefinition,
   redditToolDefinition,
   dadJokeToolDefinition,
+  movieSearchToolDefinition
 }
